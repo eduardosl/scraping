@@ -69,7 +69,7 @@ if __name__=="__main__":
 	df_s = df #df[(df['Estado']=='Distrito Federal')]
 	df_s = df_s.drop_duplicates(subset=['CP'])
 	df_s = df_s.drop_duplicates(subset=['Lat', 'Lon'])
-	for i in range(22268, len(df_s)):
+	for i in range(0, len(df_s)):
 	    x = df_s.iloc[i]
 	    print('Buscando tiendas en C.P. {} ({} de {})'.format(x.CP, i+1, len(df_s)))
 	    lat = x.Lat
